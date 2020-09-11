@@ -15,7 +15,8 @@ Welcome to my first project in scientific programming class!
   * Run `bibtex first_hw_YP`.
   * To make no weird question marks (?) appears, run `pdflatex first_hw_YP.tex` **TWICE!**.
   
-Then you are good to go.
+Then you are good to go. 
+It is MIT License so feel free to use!
 
 
 
