@@ -1,0 +1,255 @@
+% First thing first, you can put your comments after the percentage symbol 
+% multiple comment lines by starting with %
+% how about comment line section?
+
+% so all the comment stuff would at the line before the commands
+
+% to create an article, class options in squres
+% intialized an article doc, enlarged fontsize for readability for the elder (older than me)
+% papersize is old-school a4 sheet, print-friendly
+\documentclass[14pt, letterpaper]{article} 
+
+% reservation for preambles, I compare it as 'import' in python, to use additional modules
+% allow the use of memes
+\usepackage{graphicx}
+% of coursely I love to mark the line no.
+\usepackage{lineno}
+% package for multi-line comment
+\usepackage{comment}
+% package for strike-through effect. DO NOT MY MIND!
+\usepackage[normalem]{ulem}
+% extra command for citation
+\usepackage[authoryear]{natbib}
+% to use python within latex
+\usepackage{listings}
+% to use color effect on the text background; enable highlight color
+\usepackage{xcolor, soul}
+
+% starting the document
+\begin{document}
+% line spacing
+\linespread{1.66667}
+
+\begin{comment}
+Nonsense words came in here and nobody should see it 
+Gold AD slot for rent
+contact: (817)-291-8139
+
+For each begin, there is always an end. (best to my knowledge I am unsure if there is some fancy commands different)
+\end{comment}
+
+% I need a title page
+\title{HOMEWORK - 1: \\for now I still prefer MS words more}
+% culprit information I am glad my name is very neat and simple
+\author{Yang Pan}
+% include the current time
+\date{\today}
+
+% confirm the title page
+\maketitle
+% start a new page
+\newpage
+
+
+% here comes the table of contents (ToC) section
+% it would handle everything automatically 
+% [faith in Latex restored]
+\tableofcontents
+% of course we leave the ToC in individual pages
+\newpage
+
+% turn on line numbering
+\linenumbers
+
+% start the section 
+\section{Programming experiences}
+I was overwhelmed with programming classes in my Mater degree in computer applications.
+% \textbf{} to bold the text within the curly braces
+And I have studied various languages such as \textbf{C, C++, C\# (the C family), Java}, etc. \textbf{Python} was never put 
+into the syllabus, but I studied it on my own since them. Meanwhile, you have to study many other languages 
+such as \textbf{HTML, CSS, PHP, JavaScript} those language in web technologies. It was scary to use out-dated WAMP 
+server since the programming exams were all performed on the system of the department. Also, database management 
+system is fun to play with.
+% put new line as double backslashes for new line
+\\ \\
+Currently, I am typing the script on the \textbf{MacOS} system in my lab, with Mojave installed (luckily the system prevented 
+me from upgrading the OS months ago). My personal Windows laptop Dell G7 is used for \sout{gaming} parallel working experience 
+when I am \sout{listening to music} doing researches in the lab. 
+\\
+I prefer \textbf{terminal} on Mac since \sout{Mac is much more expensive than Linux laptop} MacOS is smooth to use. 
+When talking about editor, I prefer \textbf{Sublime} for the code viewing. If it is the file at remote server, \textbf{vim} is the 
+tool I use instead of emacs. Without no offense to emacs at all. 
+\textbf{Anaconda} is the favorite IDE I use for data handling (graph drawing, stats calculation) with python script. I also install 
+anaconda to remote server to install packages in really good handling.
+
+\newpage
+
+
+\section{Physics equation}
+The Gauss's Law in differential form:
+
+% start the module of equation
+\begin{equation}
+%add label for ref purpose
+	\label{eqn:gauss_law}
+	\vec{\nabla} \cdot \vec{E}  =  \frac{\rho}{\varepsilon_0}
+\end{equation}
+% use \ref for cross reference
+And for the details of the parameters in the Equation \ref{eqn:gauss_law} \\
+	
+% write a table to explain the equation, and forcefully (!) to place the table "here"
+\begin{table}[!h]
+	% centralize the table
+	\begin{center}
+	% create tabular module, | for the frames
+	\begin{tabular}{|l|c|}
+		% the content of first row
+		% horizontal line
+		\hline
+		Variable & Description \\ 
+		\hline
+		% specific contents of the table
+		$\vec{E}$ & Electric field \\ 
+		\hline
+		$\rho$ & Density of charges enclosed \\ 
+		\hline
+		$\varepsilon_0$ & Electric constant \\
+		\hline
+	\end{tabular}
+	% don't forget the caption
+	\caption{Gauss's Law differential form}
+	\end{center}
+\end{table}
+The Equation \ref{eqn:gauss_law} shows the divergence of electric field equals to the ratio between density of 
+charge enclosed and the electric constant. 
+This equation is very neat in providing the way to calculate electric field by 
+focusing on the charge density enclosed! I have met it a lot when doing the homeworks and especially during 
+the exams. Kind of \sout{PTSD} awesome. 
+
+\newpage
+
+
+\section{Comment}
+It is a very detailed tutorial including some many useful demonstrations in using the modules. \sout{Thus, I have
+not finished reading all the parts.} \\
+Some suggestions might go there: \\
+\noindent 1. It looks better if we centralize the front page vertically; \\
+\noindent 2. Can we be taught how to include GIFs in \LaTeX?
+
+\newpage
+
+
+\section{Related works}
+% \cite{} to cite the reference in .bib files
+% \citet for citation author-year without braces
+I am going to \sout{copy-and-paste} refer from the paper I have written. \\
+Total Electron Content (TEC) is an important parameter characterizing the ionospheric
+plasma number density \citep{mannucci1998global}. Especially, the dynamic TEC value can be used
+to identify travelling ionospheric disturbance, which indicates magnetic storm events. TEC also
+influences the communication between satellites and the ground stations and has been included
+as a parameter in the space weather forecasting \citep{jakowski2002gps,afraimovich2008tec}. 
+And we have used the deep convolutional generative adversarial network (DCGAN) to train the International 
+Global Navigation Satellite System (GNSS) Service (IGS)-TEC data with the post processing Poisson blending, and it outperforms conventional 
+image inpainting methods \citet{pan2020tec}. Sadly, it will not increase my citation.
+
+\newpage
+
+\section{More Memes}
+Frankly speaking, I really \sout{learned a lot} collected a lot of memes from this class. And here is an 
+absolutely good chance for me to put more. \\
+So this is my favorite cartoon character shown in Figure \ref{fig:pooh}, really adorable, isn't it? \\
+
+% to add the image, must be put at bottom of the page
+\begin{figure}[!b]
+	% similar to what we have done for table, centralize it.
+	\begin{center}
+	%specify the width and name of image
+	\includegraphics[width=12cm]{pooh_pants.png}
+	% put the caption
+	\caption{That is a bad idea.}
+	% label it for ref purpose
+	\label{fig:pooh}
+	\end{center}
+\end{figure}
+\newpage
+
+\section{Show me something new}
+Unlikely, I was trying to include a GIF into this pdf but both movie15 and media9 have failed. (Faith in \LaTeX 
+dropped $\Downarrow$). % double down arrow
+% create a subsection
+\subsection{This is a Python class}
+As you can see below, I am adding my python script file with a better visualization effect \ref{lst:python_1}.\\
+To add the coding block, we are going to use a lot of \begin{verbatim} \lstset{} \end{verbatim} commands. 
+So type the following in your .tex file: \\
+
+\nolinenumbers
+\begin{verbatim}
+\lstset{language=Python} % set the programming language
+\lstset{frame=lines} % you are going to put multiple lines
+\lstset{caption={A simple python example}} % caption is important
+\lstset{label={lst:python_1}} % you don't want to refer to it?
+\lstset{basicstyle=\small} % fontsize
+
+\begin{lstlisting}
+	[your code section]
+\end{lstlisting}
+\end{verbatim}
+\linenumbers
+And it goes like below: 
+% specify the language
+\lstset{language=Python}
+% it will include multiple lines
+\lstset{frame=lines}
+% caption the block
+\lstset{caption={A simple python example}}
+% label it for reference
+\lstset{label={lst:python_1}}
+% define the font size of the block
+\lstset{basicstyle=\small}
+% start the coding block
+\begin{lstlisting}
+import numpy as np
+
+yang = np.arange(-180, 180.1, 5)
+
+for item in yang:
+	print(item)
+\end{lstlisting}
+
+\subsection{Coloured text}
+To enable this module, import the package \texttt{xcolor} as 
+\verb+usepackage{xcolor}+. % \verb for inline verbatim environment
+Then \verb+\textcolor{color}{Text to be colored}+ to \textcolor{red}{color} \textcolor{yellow}{the} 
+\textcolor{blue}{text} \textcolor{orange}{you} \textcolor{violet}{want}. \\
+
+\subsection{Highlightened}
+You could import \texttt{xcolor} module along with \texttt{soul} module as \verb+\usepackage{xcolor, soul}+. 
+Use \verb+\hl{the highlighted part}+ for the command. If we do not specify the color we want, by default \hl{yellow would be applied}. Name the color before use \verb+\hl{}+, with \verb+\sethlcolor{unicorn_color}+. 
+\sethlcolor{green}
+\hl{How are doing Ms.~Brown?}
+
+
+
+\newpage
+
+
+
+
+
+% let it automatically restrict the length of one row in para? like ctrl+J in MS word
+
+% new stuff to include
+% display name in diff format
+% examine typo, I sensed there is even no typo detector? Faith in \latex down to 0
+
+% mandatory for a new page
+\clearpage
+% to show bibliography in table of content
+\addcontentsline{toc}{section}{Bibliography}
+% citation style file, the built-in style
+\bibliographystyle{plainnat}
+% citation .bib file. It tells the filename of bib file.
+\bibliography{hw1_YP}
+
+% DO NOT forget me!
+\end{document}
