@@ -9,7 +9,7 @@ Welcome to my first project in scientific programming class!
   * Access to the terminal. 
   
 2. Step: 
-  * Download this repo to your local system, find a nice folder to place it in. \
+  * Open your terminal, download this repo to your local system, find a nice folder to place it in. \
   `git clone https://github.com/pancookie/ScienticProgramming_hw_1.git`.
   * Run `pdflatex first_hw_YP.tex`.
   * Run `bibtex first_hw_YP`.
